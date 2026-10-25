@@ -1,0 +1,16 @@
+# >>> mac-keyboard >>>
+mac-newline() { LBUFFER+=$'\n' }
+zle -N mac-newline
+bindkey '^[^M' mac-newline          # Shift+Enter
+bindkey '^U'   backward-kill-line   # Cmd+Backspace
+bindkey '^[^?' backward-kill-word   # Option+Backspace
+bindkey '^[b'  backward-word        # Option+Left
+bindkey '^[f'  forward-word         # Option+Right
+bindkey '^[d'  kill-word            # Option+Delete
+bindkey '^[[H' beginning-of-line    # Cmd+Left
+bindkey '^[[F' end-of-line          # Cmd+Right
+bindkey '^[OH' beginning-of-line    # Cmd+Left (application mode)
+bindkey '^[OF' end-of-line          # Cmd+Right (application mode)
+bindkey '^[[1~' beginning-of-line   # Cmd+Left in tmux
+bindkey '^[[4~' end-of-line         # Cmd+Right in tmux
+# <<< mac-keyboard <<<

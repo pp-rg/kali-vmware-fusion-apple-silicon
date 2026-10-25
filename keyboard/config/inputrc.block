@@ -1,0 +1,6 @@
+# >>> mac-keyboard >>>
+$include /etc/inputrc
+"\e\C-m": "\C-v\C-j"
+"\e[H": beginning-of-line
+"\e[F": end-of-line
+# <<< mac-keyboard <<<

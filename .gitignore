@@ -1,0 +1,10 @@
+# secrets: never commit
+.env
+.env.*
+*.env
+*.pem
+*.key
+# local files
+*.bak-*
+__pycache__/
+*.swp

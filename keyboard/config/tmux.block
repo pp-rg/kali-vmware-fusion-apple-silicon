@@ -1,0 +1,4 @@
+# >>> mac-keyboard >>>
+set -sg escape-time 10
+set -g xterm-keys on
+# <<< mac-keyboard <<<
